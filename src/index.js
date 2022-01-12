@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Pagina from './App'
+/* import Pagina from './App' */
+import Pageweather from './components/Weather'
 
 ReactDOM.render(
-    <Pagina/>,
+    <Pageweather/>,
     document.getElementById('root'),
 )

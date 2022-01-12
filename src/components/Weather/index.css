@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,900&display=swap');
+
+.box{
+    background: #111111;
+    width: 85vh;
+    height: 600px;
+    border-radius: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cloudIcon{
+    color: white;
+}
+
+.titulo{
+    font-family: 'Roboto', sans-serif;
+    padding: 0.3em;
+    color: white;
+    font-weight: 900;
+}
+
+.input-dados{
+    margin-top: 0.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input{
+    text-align: center;
+    border: none;
+}
+
+.input{
+    width: 70vh;
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+}
+
+.input:hover{
+    width: 70vh;
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+    background: #d1d1d1;
+    outline: none;
+
+}
+
+::-webkit-input-placeholder{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.botao{
+    margin-top: 0.8em;
+    height: 45px;
+    width: 100px;
+    border-radius: 100px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background: white;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.botao:hover{
+    margin-top: 0.8em;
+    height: 45px;
+    width: 100px;
+    transition: 0.5s all;
+    border-radius: 100px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background: #d1d1d1;
+    cursor: pointer;
+}
+
+.clima-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo-clima{
+    margin-top: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 25pt;
+    color: white;
+}
+
+.img-clima{
+    color: white;
+    width: 60px;
+    height: 60px;
+}
+
+.clima-descricao{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: white;
+}
+
+.temperatura-container{
+    display: block;
+    margin: 0 auto;
+}
+
+.temperatura{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: white;
+}
+
+.local{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.local-icone{
+    padding: 0.5em;
+    color: white;
+}
+
+.local-texto{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: white;
+}
+
+.maximo-minmo-umidade-texto{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: white;
+}
