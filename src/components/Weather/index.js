@@ -3,29 +3,37 @@ import axios from 'axios';
 import key from './key';
 import './index.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCloud, faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
+import {faCloud, faMapMarkerAlt, faExclamationCircle} from '@fortawesome/free-solid-svg-icons';
 
 function Weather(){
 
     const[weather, setWeather] = useState(null);
-    const[city, setCity] = useState('Sao Paulo');
+    const[city, setCity] = useState(null);
+    const[problem, setProblem] = useState(false);
 
     let getWeather = async (city) => {
-      let res = await axios.get(`http://api.openweathermap.org/data/2.5/weather?`, {
-        params: {
-          q: city,
-          appid: key,
-          lang: 'pt_br',
-          units: 'metric'
-        }
-      });
-      setWeather(res.data);
+      try{
+        let res = await axios.get(`http://api.openweathermap.org/data/2.5/weather?`, {
+          params: {
+            q: city,
+            appid: key,
+            lang: 'pt_br',
+            units: 'metric'
+          }
+        });
+        setWeather(res.data);
+        setProblem(false);
+      }catch(error){
+        setProblem(true);
+      }
     }
 
-      useEffect(() => {
+    useEffect((city) => {
+      if(weather !== null){
         getWeather(city);
-      }, []);
-      
+      }
+    }, []);
+
     return(
 
         <div className='box'>
@@ -39,9 +47,16 @@ function Weather(){
               <button className='botao' onClick={() => getWeather(city)}>Pesquisar</button>
             </div>
 
-            {weather !== null &&(
+            {problem === true ?(
+              <div className='msg-erro-container'>
+                <FontAwesomeIcon className='erro-icon' size='1x' icon={faExclamationCircle}></FontAwesomeIcon>
+                <p className='msg-erro'>Cidade não encontrada.</p>
+              </div>
+            ):
+  
+            weather !== null &&(
 
-              <div class="clima-container">
+              <div className="clima-container">
                 <h2 className='titulo-clima'>Clima atual</h2>
                 <div className='img-clima-container'>
                   <img className='img-clima' src={`http://openweathermap.org/img/w/${weather.weather[0].icon}.png`} alt="imgicon"/>
@@ -63,7 +78,6 @@ function Weather(){
                   <p className='maximo-minmo-umidade-texto'>Max: {parseInt(weather.main.temp_max)} || Min: {parseInt(weather.main.temp_min)} || Umidade: {weather.main.humidity}%</p>
                 </div>
               </div>
-
             )}
         </div>
     )
@@ -73,6 +87,6 @@ function Pagina(){
 
     return <Weather/>
 
-  }
+}
 
 export default Pagina
