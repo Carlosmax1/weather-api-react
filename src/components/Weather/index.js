@@ -13,7 +13,7 @@ function Weather(){
 
     let getWeather = async (city) => {
       try{
-        let res = await axios.get(`http://api.openweathermap.org/data/2.5/weather?`, {
+        let res = await axios.get(`https://api.openweathermap.org/data/2.5/weather?`, {
           params: {
             q: city,
             appid: key,

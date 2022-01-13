@@ -123,6 +123,7 @@ input{
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #d6d5d5;
+    text-transform: capitalize;
 }
 
 .temperatura-container{
