@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,900&display=swap');
 
 .box{
     background: #111111;
@@ -116,6 +116,7 @@ input{
 .img-clima{
     color: #d6d5d5;
     width: 60px;
+    margin-top: -1.5em;
     height: 60px;
 }
 
@@ -124,6 +125,7 @@ input{
     font-weight: 900;
     color: #d6d5d5;
     text-transform: capitalize;
+    margin-top: -0.2em;
 }
 
 .temperatura-container{
@@ -135,6 +137,7 @@ input{
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #d6d5d5;
+    margin-top: -0.2em;
 }
 
 .local{
@@ -146,11 +149,13 @@ input{
 .local-icone{
     padding: 0.5em;
     color: #d6d5d5;
+    margin-top: -1.2em;
 }
 
 .local-texto{
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
+    margin-top: -0.1em;
     color: #d6d5d5;
 }
 
@@ -158,13 +163,15 @@ input{
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #d6d5d5;
-    padding-bottom: 1em;
+    margin-top: -0.1em;
+    margin-bottom: 0.1em;
 }
 
 .msg-erro-container{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: -1em;
 }
 
 .erro-icon{
@@ -176,6 +183,31 @@ input{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: rgb(207, 95, 95);
+}
+
+.rodape{
+    text-align: center;
+}
+
+.rodape-texto{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: rgb(107, 107, 107);
+}
+
+.rodape a{
+    text-decoration: none;
+    font-style: italic;
+    color: rgb(146, 146, 146);
+    transition: 0.3s all;
+}
+
+.rodape a:hover{
+    text-decoration: none;
+    font-style: italic;
+    color: rgb(146, 146, 146);
+    font-size: 1.1em;
+    transition: 0.3s all;
 }
 
 @media only screen and (max-width: 300px){

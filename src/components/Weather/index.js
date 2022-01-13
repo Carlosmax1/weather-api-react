@@ -52,6 +52,7 @@ function Weather(){
                 <FontAwesomeIcon className='erro-icon' size='1x' icon={faExclamationCircle}></FontAwesomeIcon>
                 <p className='msg-erro'>Cidade não encontrada.</p>
               </div>
+              
             ):
   
             weather !== null &&(
@@ -79,6 +80,9 @@ function Weather(){
                 </div>
               </div>
             )}
+            <div className='rodape'>
+              <p className='rodape-texto'>&copy; Desenvolvido por <a target='_blank' href='https://github.com/Carlosmax1'>Carlos</a></p>
+            </div>
         </div>
     )
 }
