@@ -1,0 +1,68 @@
+.clima-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo-clima{
+    margin-top: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 25pt;
+    color: #d6d5d5;
+}
+
+.img-clima{
+    color: #d6d5d5;
+    width: 60px;
+    margin-top: -1.5em;
+    height: 60px;
+}
+
+.clima-descricao{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #d6d5d5;
+    text-transform: capitalize;
+    margin-top: -0.2em;
+}
+
+.temperatura-container{
+    display: block;
+    margin: 0 auto;
+}
+
+.temperatura{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #d6d5d5;
+    margin-top: -0.2em;
+}
+
+.local{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.local-icone{
+    padding: 0.5em;
+    color: #d6d5d5;
+    margin-top: -1.2em;
+}
+
+.local-texto{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    margin-top: -0.1em;
+    color: #d6d5d5;
+}
+
+.maximo-minmo-umidade-texto{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #d6d5d5;
+    margin-top: -0.1em;
+    margin-bottom: 0.1em;
+}

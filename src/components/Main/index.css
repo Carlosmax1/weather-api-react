@@ -14,24 +14,6 @@
     transform: translate(-50%, -50%);
 }
 
-.titulo-principal{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cloudIcon{
-    color: #d6d5d5;
-    padding: 0.3em 0.3em 0 0;
-}
-
-.titulo{
-    font-family: 'Roboto', sans-serif;
-    padding-top: 0.3em;
-    color: #d6d5d5;
-    font-weight: 900;
-}
-
 .input-dados{
     margin-top: 0.1em;
     display: flex;
@@ -98,117 +80,7 @@ input{
     cursor: pointer;
 }
 
-.clima-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
 
-.titulo-clima{
-    margin-top: 1em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: 25pt;
-    color: #d6d5d5;
-}
-
-.img-clima{
-    color: #d6d5d5;
-    width: 60px;
-    margin-top: -1.5em;
-    height: 60px;
-}
-
-.clima-descricao{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    color: #d6d5d5;
-    text-transform: capitalize;
-    margin-top: -0.2em;
-}
-
-.temperatura-container{
-    display: block;
-    margin: 0 auto;
-}
-
-.temperatura{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    color: #d6d5d5;
-    margin-top: -0.2em;
-}
-
-.local{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-.local-icone{
-    padding: 0.5em;
-    color: #d6d5d5;
-    margin-top: -1.2em;
-}
-
-.local-texto{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    margin-top: -0.1em;
-    color: #d6d5d5;
-}
-
-.maximo-minmo-umidade-texto{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    color: #d6d5d5;
-    margin-top: -0.1em;
-    margin-bottom: 0.1em;
-}
-
-.msg-erro-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: -1em;
-}
-
-.erro-icon{
-    color: rgb(207, 95, 95);
-    padding: 0.3em;
-}
-
-.msg-erro{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    color: rgb(207, 95, 95);
-}
-
-.rodape{
-    text-align: center;
-}
-
-.rodape-texto{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    color: rgb(107, 107, 107);
-}
-
-.rodape a{
-    text-decoration: none;
-    font-style: italic;
-    color: rgb(146, 146, 146);
-    transition: 0.3s all;
-}
-
-.rodape a:hover{
-    text-decoration: none;
-    font-style: italic;
-    color: rgb(146, 146, 146);
-    font-size: 1.1em;
-    transition: 0.3s all;
-}
 
 @media only screen and (max-width: 300px){
     .box{

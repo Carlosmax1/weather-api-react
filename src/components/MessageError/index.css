@@ -1,0 +1,18 @@
+
+.msg-erro-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -1em;
+}
+
+.erro-icon{
+    color: rgb(207, 95, 95);
+    padding: 0.3em;
+}
+
+.msg-erro{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: rgb(207, 95, 95);
+}

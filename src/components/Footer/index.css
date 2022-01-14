@@ -1,0 +1,24 @@
+.rodape{
+    text-align: center;
+}
+
+.rodape-texto{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: rgb(107, 107, 107);
+}
+
+.rodape a{
+    text-decoration: none;
+    font-style: italic;
+    color: rgb(146, 146, 146);
+    transition: 0.3s all;
+}
+
+.rodape a:hover{
+    text-decoration: none;
+    font-style: italic;
+    color: rgb(146, 146, 146);
+    font-size: 1.1em;
+    transition: 0.3s all;
+}
